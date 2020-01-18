@@ -7,8 +7,8 @@ terraform {
   backend "s3" {}
 }
 
-module "layer_infra_secrets" {
-  source        = "./modules/secrets"
+module "codecommit" {
+  source        = "./modules/codecommit"
   environment   = "${var.environment}"
   aws_region    = "${var.aws_region}"
   default_tags  = "${var.default_tags}"
