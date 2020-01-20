@@ -1,6 +1,6 @@
 aws_region  = "us-east-1"
 environment = "dev"
 default_tags = {
-    "terraform"     =   "true"
-    "environment"   =   "dev"
+    "Terraform"     =   "true"
+    "Environment"   =   "dev"
 }
