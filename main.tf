@@ -13,5 +13,13 @@ module "codecommit" {
   aws_region    = var.aws_region
   default_tags  = var.default_tags
 }
+  
+module "codecommit" {
+  source        = "./modules/codecommit"
+  environment   = var.environment
+  aws_region    = var.aws_region
+  default_tags  = var.default_tags
+}
+
 
 
